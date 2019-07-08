@@ -10,7 +10,8 @@ body {
 .header {
   background-color: #fceca4;
   padding: 7px;
-  display: flex
+  display: flex;
+  border-bottom: 1px solid
 }
 
 .right {
@@ -32,5 +33,63 @@ body {
 .left {
   padding: 10px;
   font-size: .7rem;
-  font-weight: blod
+  font-weight: blod;
+  color: rgb(18, 199, 231)
+}
+
+/* ABOUT */
+.about {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around
+}
+
+.about .about_right {
+  background: url('./images/me.jpg');
+  background-size: cover;
+  width: 50vw;
+  height: 100vh
+}
+
+.about .about_left h2, h4 {
+  text-align: center;
+  margin-bottom: 5px
+}
+
+.about .about_left .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  padding: 5px;
+}
+
+.about .about_left .content p{ 
+  color: red; 
+  text-transform: uppercase; 
+  font-size: 1.2rem;
+  margin-top: 2em
+}
+
+
+/* SKILLS */
+.skills {
+  margin-top: 3em;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items:center  
+}
+
+.skills span {
+  margin-right: 5px
+}
+
+.skills img {
+  width: 100px;
+  height: 100px
 }
